@@ -44,30 +44,83 @@ section .gallery{
 }
 
 section .gallery .gallery-item{
-
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(20% - 20px);
-    height: 320px;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
     gap: 10px;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 10px;
     border: 1px solid #3333331e;
 }
 
 section .gallery .gallery-item h4{
-    font-size: 1rem;
+
+    font-size: 4vw;
     color: #333;
 }
 
 section .gallery .gallery-item p{
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 2.5vw;
     color: #333;
 }
 
 section .gallery .gallery-item img{
     width: 100%;
     aspect-ratio: 1/1;
+}
+
+@media screen and (min-width: 768px){
+    section .gallery .gallery-item{
+        width: calc(33.33% - 20px);
+    }
+
+    section .gallery .gallery-item h4{
+        font-size: 3vw;
+    }
+    
+    section .gallery .gallery-item p{
+        font-size: 2vw;
+
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    section .gallery .gallery-item{
+        width: calc(25% - 20px);
+    }
+
+    section .gallery .gallery-item h4{
+
+        font-size: 2.5vw;
+
+    }
+    
+    section .gallery .gallery-item p{
+        font-size: 2w;
+        
+    }
+    
+} 
+
+@media screen and (min-width: 1200px){
+    section .gallery .gallery-item{
+        width: calc(25% - 20px);
+    }
+
+    section .gallery .gallery-item h4{
+
+        font-size: 2.2vw;
+
+    }
+    
+    section .gallery .gallery-item p{
+        font-size: 1.5vw;
+       
+    }
+    
 }
